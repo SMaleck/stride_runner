@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "stride_runner.Windows", "stride_runner.Windows\stride_runner.Windows.csproj", "{98F7D928-70AC-49D7-9C6B-2CA25AC7EDE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "stride_runner", "stride_runner\stride_runner.csproj", "{F973520A-3783-4554-B2DD-FD8EC9652D55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98F7D928-70AC-49D7-9C6B-2CA25AC7EDE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F7D928-70AC-49D7-9C6B-2CA25AC7EDE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F7D928-70AC-49D7-9C6B-2CA25AC7EDE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F7D928-70AC-49D7-9C6B-2CA25AC7EDE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F973520A-3783-4554-B2DD-FD8EC9652D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F973520A-3783-4554-B2DD-FD8EC9652D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F973520A-3783-4554-B2DD-FD8EC9652D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F973520A-3783-4554-B2DD-FD8EC9652D55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33D62986-25B3-4B63-85D3-63E28AEDB9E6}
+	EndGlobalSection
+EndGlobal
