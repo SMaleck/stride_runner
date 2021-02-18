@@ -6,6 +6,7 @@ ChildrenIds: []
 Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
+        - ref!! d8ff8849-96d0-4c33-af4b-96c75d5e8712
         - ref!! 45f2b0b4-6bce-456e-8172-26afad51398d
         - ref!! 947e12f6-6b6a-4cb9-b152-ace3af5c378e
     Parts:
@@ -25,10 +26,6 @@ Hierarchy:
                         Page: null
                         Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
-                    53521d5591adaebf97e7c4d90ca125a0: !Source.UIPages.TitlePage,stride_runner
-                        Id: 98bebc9b-68de-4c63-99b9-36308a46d9f0
-                        _startButton: null
-                        GameSceneUrl: 67f26532-e242-47ad-86ac-c55288f694d4:Scenes/GameScene
         -   Entity:
                 Id: 48b96a64-6905-493b-9776-f18339b81993
                 Name: Camera
@@ -64,6 +61,8 @@ Hierarchy:
                         Page: f3ef389a-d126-49c0-9693-fefc13c3caa0:UI/TitlePage
                         Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    e16213099d109f1eed83c6bae637186a: !Source.UIPages.TitlePage,stride_runner
+                        Id: 94860d09-ceac-44b5-a379-afe5fbadb4fc
         -   Entity:
                 Id: 947e12f6-6b6a-4cb9-b152-ace3af5c378e
                 Name: PF_Camera
@@ -75,3 +74,15 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             9ad28015909fb3b80106750db132c904: ref!! 91eeac3d-4704-447b-a991-fcc515a9c00d
+        -   Entity:
+                Id: d8ff8849-96d0-4c33-af4b-96c75d5e8712
+                Name: InitEntity
+                Components:
+                    42d8df226399bccfaa6c2cc2a3bef695: !TransformComponent
+                        Id: 7b8ed3d9-3825-4237-aca1-f573a1ecf7d5
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    4106d13d07e0bdffc447be4c04d55317: !Source.Init.TitleSceneInitComponent,stride_runner
+                        Id: 5bd31e0c-9acd-442c-86cf-84b832b3531a

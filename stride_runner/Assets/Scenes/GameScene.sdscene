@@ -6,6 +6,7 @@ ChildrenIds: []
 Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
+        - ref!! 5fc2a495-9d6d-42ff-b179-78336cdb9b35
         - ref!! 628810ec-fadc-4ffc-8cc6-7acbd78bbc23
         - ref!! b200a898-fd99-4796-8241-0b35dadf1d0f
         - ref!! 0be7bac8-27f5-48ee-b750-635aa9530e7e
@@ -40,6 +41,18 @@ Hierarchy:
                             57bced835f791b594e71b3c8f061676b: !StaticPlaneColliderShapeDesc
                                 Normal: {X: 0.0, Y: 1.0, Z: 0.0}
                                 Offset: 0.0
+        -   Entity:
+                Id: 5fc2a495-9d6d-42ff-b179-78336cdb9b35
+                Name: InitEntity
+                Components:
+                    28c11caed1b952794dcd0f2e10c579e6: !TransformComponent
+                        Id: 0d632056-7cfe-4958-abee-a4dd19fce77f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9e5b56dba1d13231e82c4ca8161b8345: !Source.Init.GameSceneInitComponent,stride_runner
+                        Id: f9154c39-884b-44fc-9336-63ceb0f741eb
         -   Entity:
                 Id: 628810ec-fadc-4ffc-8cc6-7acbd78bbc23
                 Name: Directional light

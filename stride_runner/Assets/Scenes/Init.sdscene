@@ -18,7 +18,7 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    acff785732ffd1f263596655fc96b6e2: !Source.Init.InitComponent,stride_runner
-                        Id: 62b43a44-2465-4cc8-b262-93dbdb62422e
+                    6cfca1fe2215a72f43d82630f9cb366a: !Source.Init.RootSceneInitComponent,stride_runner
+                        Id: 5780a4fc-c6a3-40d4-82e9-951f9aab5d76
                         TitleSceneUrl: 32eb6d07-d06a-469c-82bd-4dfbdf9c1182:Scenes/TitleScene
                         GameSceneUrl: 67f26532-e242-47ad-86ac-c55288f694d4:Scenes/GameScene
