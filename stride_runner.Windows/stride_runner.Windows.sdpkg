@@ -14,4 +14,7 @@ OutputGroupDirectories: {}
 ExplicitFolders: []
 Bundles: []
 TemplateFolders: []
-RootAssets: []
+RootAssets:
+    - 32eb6d07-d06a-469c-82bd-4dfbdf9c1182:Scenes/TitleScene
+    - 55b97a11-1274-4461-b49c-a2bb868c3718:Scenes/Init
+    - 67f26532-e242-47ad-86ac-c55288f694d4:Scenes/GameScene

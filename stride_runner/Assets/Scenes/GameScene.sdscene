@@ -6,11 +6,11 @@ ChildrenIds: []
 Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
-        - ref!! 8b63b6e6-26f4-4a66-854f-61d696f75870
         - ref!! 628810ec-fadc-4ffc-8cc6-7acbd78bbc23
         - ref!! b200a898-fd99-4796-8241-0b35dadf1d0f
         - ref!! 0be7bac8-27f5-48ee-b750-635aa9530e7e
         - ref!! 7922ad31-59d0-4ddc-ba95-54931b47ad2a
+        - ref!! 640f0099-472d-4f0b-9361-1d38b9d03b6c
     Parts:
         -   Entity:
                 Id: 0be7bac8-27f5-48ee-b750-635aa9530e7e
@@ -24,7 +24,7 @@ Hierarchy:
                         Children: {}
                     96cc021710db218a76c34efc9878721a: !ModelComponent
                         Id: 3b6beba9-7a2b-41d7-9660-cba8a5956aaf
-                        Model: da407809-ee14-408b-8fa5-f71ca7da8494:Ground
+                        Model: da407809-ee14-408b-8fa5-f71ca7da8494:Models/Ground
                         Materials: {}
                     3ccfdb8d640c6bd3525bd999efdc3e77: !StaticColliderComponent
                         Id: e089add3-aa23-4094-9e1c-9d9761aed871
@@ -66,6 +66,17 @@ Hierarchy:
                                 BiasParameters: {}
                         Intensity: 20.0
         -   Entity:
+                Id: 640f0099-472d-4f0b-9361-1d38b9d03b6c
+                Name: PF_Camera
+                Components:
+                    14ee19401eeb04c2ac971d1fba132dc8: !TransformComponent
+                        Id: ed424cde-2152-4b3d-9e0f-d8c673fc641d
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            b168f2850f48b69390238075748fc4a7: ref!! 2556e91a-27ba-46df-9a8d-d0e7bf8e1cfb
+        -   Entity:
                 Id: 7922ad31-59d0-4ddc-ba95-54931b47ad2a
                 Name: Player
                 Components:
@@ -77,7 +88,7 @@ Hierarchy:
                         Children: {}
                     f87cd150906f4663b0a52cdb3b6f9e17: !ModelComponent
                         Id: 12b2c81c-a7a5-45a5-85f9-bbd321e735c1
-                        Model: 061d4647-031c-4390-97eb-c55bdbd9258d:Sphere
+                        Model: 061d4647-031c-4390-97eb-c55bdbd9258d:Models/Sphere
                         Materials: {}
                     e05ec92efbe18ee671d543c1b169b028: !CharacterComponent
                         Id: 56c6acda-205f-4eac-8084-d5188a44b214
@@ -97,23 +108,9 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    31fa00f3fefa9b920a95b7cb7de52d00: !Source.PlayerInputComponent,stride_runner
-                        Id: f749d09c-7d4c-4012-a60a-1c09ec6d95ec
-        -   Entity:
-                Id: 8b63b6e6-26f4-4a66-854f-61d696f75870
-                Name: Camera
-                Components:
-                    7ec023f03fcf9cb812a4e1f42e837fc7: !TransformComponent
-                        Id: a6549b2f-a377-43eb-8176-2ec08b9ec959
-                        Position: {X: 0.0, Y: 4.0, Z: 10.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    ea5ef365b149138ec3f49067d5537849: !CameraComponent
-                        Id: c3d8371f-1d55-41b7-9b99-bcaa99a91df3
-                        Name: null
-                        Projection: Orthographic
-                        Slot: c8bee1ec-3abf-4e86-a321-03a488181878
+                    8f6dad59ea724f998df4c9f378ae3540: !Source.Player.PlayerInputComponent,stride_runner
+                        Id: f0c659e2-cf9b-46db-bacc-c94e7f6c2683
+                        Speed: 5.0
         -   Entity:
                 Id: b200a898-fd99-4796-8241-0b35dadf1d0f
                 Name: Skybox
@@ -126,8 +123,30 @@ Hierarchy:
                         Children: {}
                     be1f270ff48f4304fb2a07c6a4e46d0c: !BackgroundComponent
                         Id: 835ea3bb-3b34-4b21-a10f-679073763a3a
-                        Texture: f501693f-ba11-48aa-86d5-d6e28e80bc14:Skybox texture
+                        Texture: f501693f-ba11-48aa-86d5-d6e28e80bc14:Models/Skybox texture
                     05d4f195a8eecb150414baf09653d472: !LightComponent
                         Id: 809bbad0-ed99-4ba3-a5a5-244ee24af7ab
                         Type: !LightSkybox
-                            Skybox: 298691b8-0c77-4840-a48b-4411316b8245:Skybox
+                            Skybox: 298691b8-0c77-4840-a48b-4411316b8245:Models/Skybox
+        -   Entity:
+                Id: e3b63aea-ad5c-4400-9986-36b8c61a879b
+                Name: Camera
+                Components:
+                    7ec023f03fcf9cb812a4e1f42e837fc7: !TransformComponent
+                        Id: 2556e91a-27ba-46df-9a8d-d0e7bf8e1cfb
+                        Position: {X: 0.0, Y: 4.0, Z: 10.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ea5ef365b149138ec3f49067d5537849: !CameraComponent
+                        Id: 21ec9d8f-7e16-4022-80a2-ee9321c78c6d
+                        Name: null
+                        Projection: Orthographic
+                        Slot: c8bee1ec-3abf-4e86-a321-03a488181878
+                    b774125b4982e9ddfd4d5fdd751342b8: !Source.Camera.FollowPlayerCameraComponent,stride_runner
+                        Id: e961bb3d-e2aa-4bc8-ad08-88a02308137e
+                        FollowTarget*: ref!! f9275e9c-af8e-44a3-b78d-892ef5ada563
+            Base:
+                BasePartAsset: 7792d659-e010-4d57-9aaa-102e9cd87fff:Prefabs/PF_Camera
+                BasePartId: b470464b-7b2f-49f0-8499-1c3699949877
+                InstanceId: db5fae1e-9d1f-4837-aab3-f15932759df1

@@ -9,4 +9,4 @@ Type: !SphereProceduralModel
     LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
     NumberOfTextureCoordinates: 10
     MaterialInstance:
-        Material: c4cb1323-cc32-4182-b2e7-dd465c28f064:Sphere Material
+        Material: c4cb1323-cc32-4182-b2e7-dd465c28f064:Models/Sphere Material

@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 7f6d23e9-dbae-430d-b0c8-1c238a741f18
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: UI
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    dc3d1975f14be07bec66f9026f5adcb2:
+        Source: !file ../../../../_sandbox/title_background.png
+        Name: title_background
+        TextureRegion: {X: 0, Y: 0, Width: 945, Height: 532}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

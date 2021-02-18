@@ -1,0 +1,77 @@
+!SceneAsset
+Id: 32eb6d07-d06a-469c-82bd-4dfbdf9c1182
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 45f2b0b4-6bce-456e-8172-26afad51398d
+        - ref!! 947e12f6-6b6a-4cb9-b152-ace3af5c378e
+    Parts:
+        -   Entity:
+                Id: 45f2b0b4-6bce-456e-8172-26afad51398d
+                Name: UI
+                Components:
+                    dd1d6dab69a76f582c16b674d63aecea: !TransformComponent
+                        Id: 97e03d26-6d69-40bf-849e-2e967844fdda
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            3c709da474b38dbccbd3ab405ebcd55f: ref!! 75f70d66-0e38-4aa0-a2b6-ed2a1f76784c
+                    a1158b3a90d71f1af6d88cd5c8873719: !UIComponent
+                        Id: a35db4e5-8278-4b38-a5f4-02d228977e0d
+                        Page: null
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    53521d5591adaebf97e7c4d90ca125a0: !Source.UIPages.TitlePage,stride_runner
+                        Id: 98bebc9b-68de-4c63-99b9-36308a46d9f0
+                        _startButton: null
+                        GameSceneUrl: 67f26532-e242-47ad-86ac-c55288f694d4:Scenes/GameScene
+        -   Entity:
+                Id: 48b96a64-6905-493b-9776-f18339b81993
+                Name: Camera
+                Components:
+                    7ec023f03fcf9cb812a4e1f42e837fc7: !TransformComponent
+                        Id: 91eeac3d-4704-447b-a991-fcc515a9c00d
+                        Position: {X: 0.0, Y: 4.0, Z: 10.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ea5ef365b149138ec3f49067d5537849: !CameraComponent
+                        Id: 702a0c46-b014-486e-bf1d-a6e632573dbf
+                        Name: null
+                        Projection: Orthographic
+                        Slot: c8bee1ec-3abf-4e86-a321-03a488181878
+                    b774125b4982e9ddfd4d5fdd751342b8: ~(Deleted)
+            Base:
+                BasePartAsset: 7792d659-e010-4d57-9aaa-102e9cd87fff:Prefabs/PF_Camera
+                BasePartId: b470464b-7b2f-49f0-8499-1c3699949877
+                InstanceId: 0e9562cd-db80-484c-87cb-6971d781d1ac
+        -   Entity:
+                Id: 4dc5b811-628f-433e-ab81-b93d236edc01
+                Name: TitlePage
+                Components:
+                    eb30f4a829ac7429246e5e46035e8769: !TransformComponent
+                        Id: 75f70d66-0e38-4aa0-a2b6-ed2a1f76784c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    65488a372b1875d2cd263843a575972a: !UIComponent
+                        Id: 17367fce-cde1-4be6-8b9e-920629c9442e
+                        Page: f3ef389a-d126-49c0-9693-fefc13c3caa0:UI/TitlePage
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+        -   Entity:
+                Id: 947e12f6-6b6a-4cb9-b152-ace3af5c378e
+                Name: PF_Camera
+                Components:
+                    2f5d6dcd902313565d153634678c0dcf: !TransformComponent
+                        Id: 5f7ea4cd-efa7-40e4-95d1-81f346e5c6a4
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            9ad28015909fb3b80106750db132c904: ref!! 91eeac3d-4704-447b-a991-fcc515a9c00d

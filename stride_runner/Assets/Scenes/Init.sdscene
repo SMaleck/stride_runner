@@ -1,0 +1,24 @@
+!SceneAsset
+Id: 55b97a11-1274-4461-b49c-a2bb868c3718
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 0a27b6a2-de3d-4b70-b49c-bce4b130b662
+    Parts:
+        -   Entity:
+                Id: 0a27b6a2-de3d-4b70-b49c-bce4b130b662
+                Name: InitEntity
+                Components:
+                    231ce9d90d035c6c5d55fca09608be39: !TransformComponent
+                        Id: 19cd1f2c-1468-4d8b-99f8-9b92b2009896
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    acff785732ffd1f263596655fc96b6e2: !Source.Init.InitComponent,stride_runner
+                        Id: 62b43a44-2465-4cc8-b262-93dbdb62422e
+                        TitleSceneUrl: 32eb6d07-d06a-469c-82bd-4dfbdf9c1182:Scenes/TitleScene
+                        GameSceneUrl: 67f26532-e242-47ad-86ac-c55288f694d4:Scenes/GameScene

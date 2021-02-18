@@ -1,0 +1,26 @@
+!PrefabAsset
+Id: 7792d659-e010-4d57-9aaa-102e9cd87fff
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! b470464b-7b2f-49f0-8499-1c3699949877
+    Parts:
+        -   Entity:
+                Id: b470464b-7b2f-49f0-8499-1c3699949877
+                Name: Camera
+                Components:
+                    7ec023f03fcf9cb812a4e1f42e837fc7: !TransformComponent
+                        Id: 1022f3de-c7ab-407f-9570-4214376bd940
+                        Position: {X: 0.0, Y: 4.0, Z: 10.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ea5ef365b149138ec3f49067d5537849: !CameraComponent
+                        Id: 5739bf9c-ffad-409d-b010-2263f993647f
+                        Name: null
+                        Projection: Orthographic
+                        Slot: c8bee1ec-3abf-4e86-a321-03a488181878
+                    b774125b4982e9ddfd4d5fdd751342b8: !Source.Camera.FollowPlayerCameraComponent,stride_runner
+                        Id: 7ce799ad-f539-4bb5-963a-57041f51a9ab
+                        FollowTarget: null
