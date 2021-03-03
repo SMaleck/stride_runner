@@ -49,7 +49,7 @@ Hierarchy:
                 Components:
                     0a7082b528ccf400a78f476959c69b2e: !TransformComponent
                         Id: 21fe16fa-f0ce-4a0a-81f5-0303a5b501b2
-                        Position: {X: 1.4944897, Y: 0.0, Z: -5.568157}
+                        Position*: {X: -3.35257, Y: 0.7484812, Z: 14.99414}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -138,7 +138,7 @@ Hierarchy:
                         Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
                         ColliderShapes:
                             fac8576fffd1332b9b07b78777ce3387: !BoxColliderShapeDesc
-                                Is2D: false
+                                Is2D: true
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
@@ -192,7 +192,7 @@ Hierarchy:
                     ea5ef365b149138ec3f49067d5537849: !CameraComponent
                         Id: 21ec9d8f-7e16-4022-80a2-ee9321c78c6d
                         Name: null
-                        Projection: Orthographic
+                        Projection*: Orthographic
                         Slot: c8bee1ec-3abf-4e86-a321-03a488181878
                     b774125b4982e9ddfd4d5fdd751342b8: !Source.Camera.FollowPlayerCameraComponent,stride_runner
                         Id: e961bb3d-e2aa-4bc8-ad08-88a02308137e
