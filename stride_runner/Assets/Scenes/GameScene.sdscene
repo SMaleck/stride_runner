@@ -12,6 +12,8 @@ Hierarchy:
         - ref!! 0be7bac8-27f5-48ee-b750-635aa9530e7e
         - ref!! 7922ad31-59d0-4ddc-ba95-54931b47ad2a
         - ref!! 640f0099-472d-4f0b-9361-1d38b9d03b6c
+        - ref!! 1aa78238-4f0b-49ac-af94-1bf000c8117b
+        - ref!! 9724b70f-bb21-4b01-8c47-05569aa973f1
     Parts:
         -   Entity:
                 Id: 0be7bac8-27f5-48ee-b750-635aa9530e7e
@@ -41,6 +43,25 @@ Hierarchy:
                             57bced835f791b594e71b3c8f061676b: !StaticPlaneColliderShapeDesc
                                 Normal: {X: 0.0, Y: 1.0, Z: 0.0}
                                 Offset: 0.0
+        -   Entity:
+                Id: 1aa78238-4f0b-49ac-af94-1bf000c8117b
+                Name: Cube
+                Components:
+                    0a7082b528ccf400a78f476959c69b2e: !TransformComponent
+                        Id: 21fe16fa-f0ce-4a0a-81f5-0303a5b501b2
+                        Position: {X: 1.4944897, Y: 0.0, Z: -5.568157}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    27275e68b333307ff5bece937e8ed619: !ModelComponent
+                        Id: 05ceeafd-3e53-4ab4-abc1-7e655ab28e29
+                        Model: c82db2df-26a4-4dfc-af4b-9da33f6c6f45:Models/Cube
+                        Materials:
+                            f3c855d0e7a6275637f63093c3e77df0~0: 08af1b0a-7829-4674-8594-5c000087bb6d:Material
+            Base:
+                BasePartAsset: e3de5791-6037-40e2-a646-723894c95f9c:Prefabs/PF_Cube
+                BasePartId: 9d88758d-b92b-4b3d-ac3b-4a23ff1c871d
+                InstanceId: c7857db1-3fd3-459a-8893-935022c9cf65
         -   Entity:
                 Id: 5fc2a495-9d6d-42ff-b179-78336cdb9b35
                 Name: InitEntity
@@ -124,6 +145,22 @@ Hierarchy:
                     8f6dad59ea724f998df4c9f378ae3540: !Source.Player.PlayerInputComponent,stride_runner
                         Id: f0c659e2-cf9b-46db-bacc-c94e7f6c2683
                         Speed: 5.0
+                    9f864c332f4361de3d886f68b11772a6: !Source.Player.LookAheadComponent,stride_runner
+                        Id: 994c6ec2-51b4-48ae-a47f-0e381e640ed3
+        -   Entity:
+                Id: 9724b70f-bb21-4b01-8c47-05569aa973f1
+                Name: WorldSpawners
+                Components:
+                    5a962c73b43d9a1d4963d18fdd53da0a: !TransformComponent
+                        Id: 2d1c7427-337d-4c35-9ce8-2406ebbd6069
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2c3005538698709c68d8e1462c1378ac: !Source.World.BackgroundSpawner,stride_runner
+                        Id: dace5532-2a52-47d8-b0ce-d34bd80963a5
+                        LookAheadComponent: ref!! 994c6ec2-51b4-48ae-a47f-0e381e640ed3
+                        Cube: ref!! 1aa78238-4f0b-49ac-af94-1bf000c8117b
         -   Entity:
                 Id: b200a898-fd99-4796-8241-0b35dadf1d0f
                 Name: Skybox
@@ -137,6 +174,7 @@ Hierarchy:
                     be1f270ff48f4304fb2a07c6a4e46d0c: !BackgroundComponent
                         Id: 835ea3bb-3b34-4b21-a10f-679073763a3a
                         Texture: f501693f-ba11-48aa-86d5-d6e28e80bc14:Models/Skybox texture
+                        Intensity: 2.23
                     05d4f195a8eecb150414baf09653d472: !LightComponent
                         Id: 809bbad0-ed99-4ba3-a5a5-244ee24af7ab
                         Type: !LightSkybox
