@@ -49,7 +49,7 @@ Hierarchy:
                 Components:
                     0a7082b528ccf400a78f476959c69b2e: !TransformComponent
                         Id: 21fe16fa-f0ce-4a0a-81f5-0303a5b501b2
-                        Position*: {X: -3.35257, Y: 0.7484812, Z: 14.99414}
+                        Position*: {X: -3.1678615, Y: 0.0, Z: -5.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -159,6 +159,7 @@ Hierarchy:
                         Children: {}
                     2c3005538698709c68d8e1462c1378ac: !Source.World.BackgroundSpawner,stride_runner
                         Id: dace5532-2a52-47d8-b0ce-d34bd80963a5
+                        GameCamera: ref!! dbed447f-085c-49c2-8ecd-8eed5c3ebc3c
                         LookAheadComponent: ref!! 994c6ec2-51b4-48ae-a47f-0e381e640ed3
                         Cube: ref!! 1aa78238-4f0b-49ac-af94-1bf000c8117b
         -   Entity:
@@ -197,6 +198,9 @@ Hierarchy:
                     b774125b4982e9ddfd4d5fdd751342b8: !Source.Camera.FollowPlayerCameraComponent,stride_runner
                         Id: e961bb3d-e2aa-4bc8-ad08-88a02308137e
                         FollowTarget*: ref!! f9275e9c-af8e-44a3-b78d-892ef5ada563
+                    33e21396ac4dfe6f88819346d0d3d324*: !Source.Camera.GameCameraComponent,stride_runner
+                        Id: dbed447f-085c-49c2-8ecd-8eed5c3ebc3c
+                        Camera: ref!! 21ec9d8f-7e16-4022-80a2-ee9321c78c6d
             Base:
                 BasePartAsset: 7792d659-e010-4d57-9aaa-102e9cd87fff:Prefabs/PF_Camera
                 BasePartId: b470464b-7b2f-49f0-8499-1c3699949877
